@@ -195,7 +195,9 @@
 
 
 
+<style>
 
+</style>
 
 
 
@@ -236,11 +238,28 @@
     <div class="section pt-0">
       <div class="container">
         <div class="row justify-content-between mb-5">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-            <div class="img-about dots">
-              <img src="images/coincoin (2).jpg" alt="Image" class="img-fluid" />
-            </div>
-          </div>
+         <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+    <div class="img-about dots flip-container">
+        <img src="images/coincoin (2).jpg" alt="Image" class="img-fluid flip-image" />
+    </div>
+</div>
+
+<style>
+  .flip-container {
+    perspective: 1000px;
+}
+
+.flip-image {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-image {
+    transform: rotateY(180deg);
+}
+
+</style>
+
           <div class="col-lg-4">
             <div class="d-flex feature-h">
               <span class="wrap-icon me-3">
