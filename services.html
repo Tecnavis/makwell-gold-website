@@ -4,7 +4,6 @@
 * Template URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -28,13 +27,15 @@
     <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-   
+
     <title>
       Makwell
     </title>
   </head>
   <body>
+    
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
@@ -44,52 +45,122 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-    <nav class="site-nav">
-      <div class="container" >
-        <div class="menu-bg-wrap" style="background-color: #005555;">
-          <div class="site-navigation" >
-            <a href="index.html" class="logo m-0 float-start">  <img src="./images/MAK-... (2) 2.png" style="height: 50px;"  alt=""></a>
 
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">Why choose us</a></li>
-              <li class="has-children">
-                <a href="#">Our Company</a>
-                <ul class="dropdown">
-                  <li><a href="amlpolicy.html">Aml policy</a></li>
-                  <li><a href="#">My Account</a></li>
-                  <li class="has-children">
-                    <!-- <a href="#">E- services</a> -->
-                    <ul class="dropdown">
-                      <!-- <li><a href="https://www.forexfactory.com/calendar">Economic Calander</a></li> -->
-                      <!-- <li><a href="https://www.forexfactory.com/news">News</a></li> --> 
-                      <!-- <li><a href="#">Sub Menu Three</a></li> -->
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="services.html">Products</a></li>
-              <li><a href="tv view.html">Live rate</a></li>
-              <!-- <li><a href="zakath calculator.html">Zakath calculator</a></li> -->
-              <!-- <li><a href="about.html">About</a></li> -->
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
 
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
-          </div>
-        </div>
+
+   <!-- WhatsApp and Email ID section above the nav bar -->
+   <div class="contact-info-bar" style="background-color: #055f5f; padding: 10px 0;">
+    <div class="container">
+      <div class="" style="display: flex;justify-content: center; align-content: center;">
+        <a href="https://wa.me/971544783414" class="whatsapp" target="_blank" style="color: white; text-decoration: none;">
+          <div style="display: flex;justify-content: center;align-content: center;"><i class="fab fa-whatsapp" style="margin-right: 10px;font-size: large;"></i> <p>+971 54 478 3414</p></div>
+        </a>
+        <span class="mx-3" style="color: white;">|</span>
+        <a href="mailto:makwellgold@gmail.com" class="email" style="color: white; text-decoration: none;">
+          <div style="display: flex;justify-content: center;align-content: center;"><i class="fas fa-envelope" style="margin-right: 10px;font-size: large;" ></i> <p>makwellgold@gmail.com</p></div>
+        </a>
       </div>
-    </nav>
-    
+    </div>
+  </div>
+  
+  
+
+<nav class="site-nav" style="margin: 45px;">
+  <div class="container">
+    <div class="menu-bg-wrap" style="background-color: #005555;">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0 float-start logo-animate">
+          <img src="./images/MAK WELL.png" style="height: 80px;" alt="">
+        </a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end" style="margin-top: 20px;">
+          <li class="active nav-item-animate"><a href="index.html">Home</a></li>
+          <li class="nav-item-animate"><a href="about.html">Why choose us</a></li>
+          <li class="has-children nav-item-animate">
+            <a href="#">Our Company</a>
+            <ul class="dropdown">
+              <li><a href="amlpolicy.html">Aml policy</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </li>
+          <li class="nav-item-animate"><a href="services.html">Products</a></li>
+          <li class="nav-item-animate"><a href="tv view.html">Live rate</a></li>
+          <li class="nav-item-animate"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* Smooth transition for all items */
+.site-navigation, .site-navigation a, .logo img {
+  transition: all 0.3s ease;
+}
+
+/* Logo animation on hover */
+.logo-animate img {
+  transform: scale(1);
+}
+
+.logo-animate:hover img {
+  transform: scale(1.1); /* Slightly larger logo */
+}
+
+/* Navbar items hover effect */
+.nav-item-animate a {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-item-animate a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-item-animate a:hover::after {
+  width: 100%; /* Underline effect on hover */
+}
+
+.nav-item-animate a:hover {
+  color: #FFD700; /* Change color on hover */
+}
+
+/* Burger menu animation */
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.burger:hover span {
+  background: #FFD700; /* Change burger color on hover */
+}
+
+/* Background fade-in effect */
+.menu-bg-wrap {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
     <div
       class="hero page-inner overlay"
       style="background-image: url('images/coincoin\ \(2\).jpg')"
