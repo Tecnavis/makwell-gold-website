@@ -49,62 +49,100 @@
 
 
    <!-- WhatsApp and Email ID section above the nav bar -->
-   <div class="contact-info-bar" style="background-color: #055f5f; padding: 10px 0;">
+   
+  
+   <style>
+    @media (max-width: 768px) {
+      .contact-info-bar p {
+        font-size: 12px; /* Adjust text size for mobile */
+      }
+      .contact-info-bar i {
+        font-size: 16px; /* Adjust icon size for mobile */
+      }
+      .contact-info-bar .email {
+        display: none; /* Hide email in mobile view */
+      }
+      .contact-info-bar .mx-3:last-of-type {
+        display: none; /* Hide the span after the second WhatsApp number */
+      }
+    }
+  </style>
+  
+  <div class="contact-info-bar" style="background-color: #055f5f; padding: 10px 0;">
+      <div class="container">
+        <div class="" style="display: flex;justify-content: center; align-content: center;">
+          <a href="https://wa.me/971509629300" class="whatsapp" target="_blank" style="color: white; text-decoration: none;">
+            <div style="display: flex;justify-content: center;align-content: center;">
+              <i class="fab fa-whatsapp" style="margin-right: 10px;"></i> 
+              <p>+971509629300</p>
+            </div>
+          </a>
+          <span class="mx-3" style="color: white;">|</span>
+  
+          <a href="https://wa.me/971509586300" class="whatsapp" target="_blank" style="color: white; text-decoration: none;">
+            <div style="display: flex;justify-content: center;align-content: center;">
+              <i class="fab fa-whatsapp" style="margin-right: 10px;"></i> 
+              <p>+971509586300</p>
+            </div>
+          </a>
+          
+          <span class="mx-3" style="color: white;">|</span> <!-- This span will be hidden on mobile view -->
+          <a href="mailto:makwellgold@gmail.com" class="email" style="color: white; text-decoration: none;">
+            <div style="display: flex;justify-content: center;align-content: center;">
+              <i class="fas fa-envelope" style="margin-right: 10px;"></i> 
+              <p>makwellgold@gmail.com</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+
+  <style>
+    @media (max-width: 768px) {
+      .site-nav {
+        margin-left: -10px !important; /* Adjust the left margin for mobile view */
+        margin-right: 0px; /* You can also adjust the right margin if needed */
+        margin-top: 0px; /* Adjust the top margin for mobile view */
+        margin-bottom: 0px; /* Adjust the bottom margin for mobile view */
+      }
+    }
+  </style>
+  
+  <nav class="site-nav" style="margin: 45px;">
     <div class="container">
-      <div class="" style="display: flex;justify-content: center; align-content: center;">
-        <a href="https://wa.me/971509629300" class="whatsapp" target="_blank" style="color: white; text-decoration: none;">
-          <div style="display: flex;justify-content: center;align-content: center;"><i class="fab fa-whatsapp" style="margin-right: 10px;font-size: large;"></i> <p>+971509629300</p></div>
-        </a>
-        <span class="mx-3" style="color: white;">|</span>
-
-        <a href="https://wa.me/971509586300" class="whatsapp" target="_blank" style="color: white; text-decoration: none;">
-          <div style="display: flex;justify-content: center;align-content: center;"><i class="fab fa-whatsapp" style="margin-right: 10px;font-size: large;"></i> <p>+971509586300</p></div>
-        </a>
-        
-        <span class="mx-3" style="color: white;">|</span>
-        <a href="mailto:makwellgold@gmail.com" class="email" style="color: white; text-decoration: none;">
-          <div style="display: flex;justify-content: center;align-content: center;"><i class="fas fa-envelope" style="margin-right: 10px;font-size: large;" ></i> <p>makwellgold@gmail.com</p></div>
-        </a>
+      <div class="menu-bg-wrap" style="background-color: #005555;">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start logo-animate">
+            <img src="./images/maknew.png" style="height: 80px;" alt="">
+          </a>
+  
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end" style="margin-top: 20px;">
+            <li class="active nav-item-animate"><a href="index.html">Home</a></li>
+            <li class="nav-item-animate"><a href="about.html">Why choose us</a></li>
+            <li class="has-children nav-item-animate">
+              <a href="#">Our Company</a>
+              <ul class="dropdown">
+                <li><a href="amlpolicy.html">Aml policy</a></li>
+                <li><a href="./M A K WELL - KYC.pdf" target="_blank">Open a Account</a></li>
+              </ul>
+            </li>
+            <li class="nav-item-animate"><a href="services.html">Products</a></li>
+            <li class="nav-item-animate"><a href="tv view.html">Live rate</a></li>
+            <li class="nav-item-animate"><a href="contact.html">Contact Us</a></li>
+          </ul>
+  
+          <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
   
-  
-
-<nav class="site-nav" style="margin: 45px;">
-  <div class="container">
-    <div class="menu-bg-wrap" style="background-color: #005555;">
-      <div class="site-navigation">
-        <a href="index.html" class="logo m-0 float-start logo-animate">
-          <img src="./images/maknew.png" style="height: 80px;" alt="">
-        </a>
-
-        <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end" style="margin-top: 20px;">
-          <li class="active nav-item-animate"><a href="index.html">Home</a></li>
-          <li class="nav-item-animate"><a href="about.html">Why choose us</a></li>
-          <li class="has-children nav-item-animate">
-            <a href="#">Our Company</a>
-            <ul class="dropdown">
-              <li><a href="amlpolicy.html">Aml policy</a></li>
-              <li><a href="./M A K WELL - KYC.pdf" target="_blank">Open a Account</a></li>
-              <!-- <li><a href="path-to-your-pdf/myaccount.pdf" download="My_Account.pdf">Download My Account</a></li> -->
-            </ul>
-          </li>
-          
-          
-          <li class="nav-item-animate"><a href="services.html">Products</a></li>
-          <li class="nav-item-animate"><a href="tv view.html">Live rate</a></li>
-          <li class="nav-item-animate"><a href="contact.html">Contact Us</a></li>
-        </ul>
-
-        <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-          <span></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
-
 <style>
 /* Smooth transition for all items */
 .site-navigation, .site-navigation a, .logo img {
